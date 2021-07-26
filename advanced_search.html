@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="top">
+            <div class="top-banner" id="top-adv">
+                <img class="left-align" src="./images/google_logo.png" alt="Google Logo" width="74px" height="24px">
+                <img class="right-align" src="./images/user-profile.png" id="user-profile" alt="User Profile">
+                <img class="right-align" src="./images/nine-dots.png" id="option-dots" alt="Option Dots">
+                <a class="right-align" href="./index.html" style="font-size:14px">Search</a>
+            </div>
+            <p id="advanced-search-title">Advanced Search</p>
+            <div id="border"></div>
+        </div>
+        <div class="advanced-search-form">
+            <form action="https://google.com/search">
+                <div class="line-item" id="heading-line">
+                    <p id="find-pages">Find pages with...</p>
+                    <p id="to-do-this">To do this in the search box</p>
+                </div>
+                <div id="adv-form-container">
+                    <div class="line-item" id="line-1">
+                        <p>all these words:</p>
+                        <input type="text" name="as_q" autocomplete="off" class="text-input" id="all" autofocus>
+                        <label for="all">Type the important words:  <span style="color:#666; font-family:monospace; font-size:11px; white-space:pre;"> tricolor rat terrier</span></label>
+                    </div>
+                    <div class="line-item" id="line-2">
+                        <p>this exact word or phrase:</p>
+                        <input type="text" name="as_epq" autocomplete="off" class="text-input" id="exact">
+                        <label for="exact">Put exact words in quotes:  <span style="color:#666; font-family:monospace; font-size:11px; white-space:pre;"> "rat terrier"</span></label>
+                    </div>
+                    <div class="line-item" id="line-3">
+                        <p>any of these words:</p>
+                        <input type="text" name="as_oq" autocomplete="off" class="text-input" id="any">
+                        <label for="any">Type <span style="color:#666; font-family:monospace; font-size:11px; white-space:pre;">OR</span> between all the words you want:  <span style="color:#666; font-family:monospace; font-size:11px; white-space:pre;"> miniature OR standard</span></label>
+                    </div>
+                    <div class="line-item" id="line-4">
+                        <p>none of these words:</p>
+                        <input type="text" name="as_eq" autocomplete="off" class="text-input" id="none">
+                        <label for="none">Put a minus sign just before words you don't want:  <span style="color:#666; font-family:monospace; font-size:11px; white-space:pre;"> -rodent, -"Jack Russell"</span></label>
+                    </div>
+                    <br>
+                    <input type="submit" id="advanced-search-btn" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+        <div class="bottom-banner-search" id="bottom-banner-advanced">
+            <a class="left-align" href="#help">Help</a>
+            <a class="left-align" href="#">Privacy</a>
+            <a class="left-align" href="#">Terms</a>
+        </div>
+    </body>
+</html>
